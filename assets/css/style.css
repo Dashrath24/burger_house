@@ -2,13 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid; */
+    border: 1px solid;
 }
-body{
-    overflow-x: hidden;
-}
+
 :root {
     --main-font: 'Bebas Neue'
+}
+
+body {
+    overflow-x: hidden;
 }
 
 /* Common CSS */
@@ -34,19 +36,31 @@ body{
 
 .row {
     display: flex;
+    flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
     justify-content: space-between;
-    align-items: center;}
+    align-items: center;
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    align-items: center;
+    justify-content: space-around;
+
+}
 
 .container-fluid {
     width: 100%;
     padding: 15px 15px;
-    
+
 }
 
 .col {
- padding: 0 25px;
+    padding: 0 25px;
 }
 
 /* common css end */
@@ -101,7 +115,7 @@ body{
 }
 
 .small-head {
-    margin-left: 15px;
+    margin-left: 20px;
     font-size: 24px;
     text-transform: uppercase;
     color: #3d2514;
@@ -183,49 +197,138 @@ body{
 
 .head-imgs {
     z-index: 0;
-    top: -15rem; 
-    left: -20.99rem; 
-    pointer-events: none;
+    top: -15rem;
+    left: -20.99rem;
+
 }
 
 .price-tag {
     z-index: 0;
-    top: 48.13rem; 
-    left: 28.5rem; 
+    top: 48.13rem;
+    left: 28.5rem;
 }
 
 .burger-img {
     z-index: -1;
-    top: 36.88rem; 
-    left: 65.38rem; 
+    top: 36.88rem;
+    left: 65.38rem;
 }
 
 .burg-shadow {
     z-index: -3;
-    top: 60.06rem; 
-    left: 62.25rem; 
+    top: 60.06rem;
+    left: 62.25rem;
 }
 
 .burg-glow {
+    pointer-events: none;
     z-index: -4;
-    top: 3.31rem; 
+    top: 3.31rem;
     left: 41.25rem;
 }
 
 .drink-img {
     z-index: -2;
-    top: 27.94rem; 
+    top: 27.94rem;
     left: 86.13rem;
 }
 
 .drink-shadow {
     z-index: -3;
-    top: 57.31rem; 
-    left: 81.13rem; 
+    top: 57.31rem;
+    left: 81.13rem;
 }
 
 .fries-img {
     z-index: -2;
-    top: 33.88rem; 
-    left: 53.94rem; 
+    top: 33.88rem;
+    left: 53.94rem;
+}
+
+/*hero section end */
+/* main section start */
+/* section-1 start */
+.main-sec1 {
+    margin-top: 50px;
+}
+
+.sec1-row1 {
+    margin: 0 30px;
+}
+
+.sec1-img1-bg {
+    background: url(../images/mainsec1img1.png);
+    height: 420px;
+    width: 550px;
+    object-fit: cover;
+}
+
+/* commen css start*/
+
+.sec1subhead {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: var(--main-font)
+}
+
+.sec1head {
+    padding-left: 20px;
+    line-height: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: var(--main-font)
+}
+
+/* commen css end*/
+/* .sec1-row {
+    margin: 0 20px;
+
+} */
+
+.sec1-img2-bg {
+    background: url(../images/mainsec1img2.png);
+    height: 187px;
+    width: 592px;
+    object-fit: cover;
+}
+
+.sec1-img3-bg {
+    margin-top: 10px;
+    background: url(../images/mainsec1img3.png);
+    height: 187px;
+    width: 592px;
+    object-fit: cover;
+}
+
+.tst-bur-btn {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #3d2514;
+    font-weight: 400;
+    font-family: var(--main-font);
+    margin-right: auto;
+    text-align: center;
+    line-height: 48px;
+    display: inline-block;
+    text-decoration: none;
+    width: 218px;
+    height: 48px;
+    background-color: #ffc045;
+}
+/* section-1 end */
+/* section-2 start */
+.main-sec2-head {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #3d2514;
+    font-weight: 400;
+    font-family: "Alfa Slab One";
+
 }
